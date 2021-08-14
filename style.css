@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em auto;
+  text-align: center;
+  font-weight: 200;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: auto;
+}
+
+#root {}
+
+#choropleth {
+  flex: 2;
+  width: 100%;
+}
+
+.outer-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fefefe;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 0.5em;
+  pointer-events: none;
+  background-color: #fafafa;
+  font-family: monospace;
+  font-weight: 400;
+  /* border: 0.1px solid #888; */
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px -1px #3D2B37;
+  min-width: 100px;
+}
+
+#ghub {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0 0 0;
+}
+
+#ghub a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: hsl(204, 54%, 70%);
+  width: 100vw;
+  padding: 0.2em;
+}
+
+#ghub a p {
+  font-weight: bold;
+  text-align: right;
+  color: #fff;
+  /* text-transform: uppercase; */
+  margin: 0 0.6em;
+  font-size: 0.6em;
+}
+
+#ghub img {
+  height: 1em;
+  transform: translateY(2px);
+}
