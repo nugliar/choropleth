@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .append('svg')
         .attr('id', 'choropleth')
         .attr('viewBox', bbox.join(' '))
-        // .attr('width', w)
         .attr('height', h * 0.75)
 
       const line = d3.line()
@@ -194,7 +193,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .domain(range)
         .range([0, widthLegend])
 
-      const legendX = w - widthLegend - paddingLegend.x
+      const svgWidth = svg.node().viewBox.baseVal.width
+      const legendX = svgWidth - widthLegend - paddingLegend.x
       const legendY = paddingLegend.y
 
       const legend = svg.append('g')
